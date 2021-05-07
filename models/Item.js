@@ -17,10 +17,10 @@ const ItemSchema = mongoose.Schema({
         type: String,
         required: false
     },
-    data: {
+    /*data: {
         type: Date,
         default: Date.now
-    }
+    }*/
 });
 
 module.exports = mongoose.model('items', ItemSchema);

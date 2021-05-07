@@ -15,7 +15,8 @@ const pcodeRoute = require('./routes/pcode');
 const itemhcodeRoute = require('./routes/itemhcode');
 const itempcodeRoute = require('./routes/itempcode');
 const api = require('./routes/routes');
-
+//axios tutorial routers
+const userRoute = require('./routes/user.routes')
 
 //DB connect
 mongoose.connect(
@@ -36,11 +37,13 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors());
 app.use('/api/v1/', api);
 app.use('/test', testRoute);
-app.use('/item', itemRoute);
+app.use('/items', itemRoute);
 app.use('/hcode', hcodeRoute);
 app.use('/pcode', pcodeRoute);
 app.use('/itemhcode', itemhcodeRoute);
 app.use('/itempcode', itempcodeRoute);
+//Axios tutorial middleware
+app.use('/users', userRoute)
 
 
 // This middleware informs the express application to serve our compiled React files

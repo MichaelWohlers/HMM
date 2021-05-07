@@ -1,8 +1,25 @@
-import React, { Component } from 'react';
-import './App.css';
-import axios from 'axios'
+//import React, { Component } from 'react';
+//import './App.css';
+//import axios from 'axios'
 
-class App extends Component {
+//axios tutorial
+import React from 'react';
+import './bootstrap.min.css';
+import Nav from "./components/nav"
+
+function App() {
+  return (
+    <div className="App">
+      <Nav />
+    
+      </div>
+  );
+}
+export default App;
+
+
+
+/* before tutorial class App extends Component {
   state = {
     response: {}
   };
@@ -24,4 +41,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App;*/
